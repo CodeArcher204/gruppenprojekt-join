@@ -27,12 +27,18 @@ body, html {
 .sidebar-nav {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 8px;
 }
 .sidebar-nav a {
+    box-sizing: border-box;
     align-items: center;
     display: flex;
     gap: 8px;
+    padding: 8px 64px 8px 64px;
+    width: 100%;
+}
+.sidebar-nav a:hover {
+    background-color: #091931;
 }
 .sidebar a {
     color: #CDCDCD;
@@ -49,6 +55,9 @@ body, html {
 .sidebar-footer a {
     color: #A8A8A8;
     padding: 8px;
+}
+.sidebar-footer a:hover {
+    color: #29ABE2;
 }
 
 .header {
